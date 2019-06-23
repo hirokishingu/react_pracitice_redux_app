@@ -1,8 +1,12 @@
 import React from 'react';
 
 function App() {
+  const greating = "Hello?";
   return (
-    <h1>Hello, world!</h1>
+    <React.Fragment>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange={() => {console.log("value");}} />
+    </React.Fragment>
   );
 }
 
